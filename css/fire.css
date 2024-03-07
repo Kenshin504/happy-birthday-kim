@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #d4159b; /* Set the background color to match the letter's background */
+}
+
+canvas {
+    background-color: #d4159b; /* Set the background color of the fireworks canvas to match the letter's background */
+}

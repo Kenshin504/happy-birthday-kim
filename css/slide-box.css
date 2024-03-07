@@ -1,0 +1,92 @@
+/* Box on the left top side of the background with tilting effect */
+.slide-box {
+    position: fixed;
+    top: 90px;
+    left: 150px;
+    width: 150px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    background-color: #3498db; /* Blue color, you can adjust it */
+    z-index: 1; /* Set a higher z-index to ensure it's on top of the card */
+    cursor: pointer;
+    transform-origin: top left; /* Set the transform origin to the top-left corner */
+    transition: transform 1s;
+    border: 5px solid #fff; /* Add a white border around the box */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.slide-box:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+/* Additional style for the image inside the slide-box */
+.box-image {
+    width: 100%; /* Make the image take up 100% of the container */
+    height: 100%; /* Make the image take up 100% of the container */
+    object-fit: cover; /* Maintain image aspect ratio while covering the container */
+}
+
+/* Box on the right top side of the background with tilting effect */
+.slide-box2 {
+    position: fixed;
+    top: 275px;
+    left: 250px;
+    width: 150px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    background-color: #e74c3c; /* Red color, you can adjust it */
+    z-index: 1; /* Set a higher z-index to ensure it's on top of the card */
+    cursor: pointer;
+    transform-origin: top right; /* Set the transform origin to the top-right corner */
+    transition: transform 1s;
+    border: 5px solid #fff; /* Add a white border around the box */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.slide-box2:hover {
+    transform: rotate(6deg) scale(1.1);
+}
+
+/* Additional style for the image inside the slide-box */
+.box-image2 {
+    width: 100%; /* Make the image take up 100% of the container */
+    height: 100%; /* Make the image take up 100% of the container */
+    object-fit: cover; /* Maintain image aspect ratio while covering the container */
+}
+
+/* Box on the bottom right side of the background */
+.slide-box3 {
+    position: fixed;
+    bottom: 40px;
+    left: 150px;
+    width: 150px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    background-color: #27ae60; /* Green color, you can adjust it */
+    z-index: 1; /* Set a higher z-index to ensure it's on top of the card */
+    cursor: pointer;
+    transform-origin: bottom right; /* Set the transform origin to the bottom-right corner */
+    transition: transform 1s;
+    border: 5px solid #fff; /* Add a white border around the box */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.slide-box3:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.box-image3 {
+    width: 100%; /* Make the image take up 100% of the container */
+    height: 100%; /* Make the image take up 100% of the container */
+    object-fit: cover; /* Maintain image aspect ratio while covering the container */
+}
+
+/* CSS for audio controls */
+#audio-controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: move;
+    z-index: 2; /* Set a higher z-index */
+}
+
+#audio-controls audio {
+    width: 200px;
+}
